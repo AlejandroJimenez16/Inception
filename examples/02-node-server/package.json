@@ -1,0 +1,14 @@
+{
+    "name": "02-node-server",
+    "version": "1.0.0",
+    "description": "Server de Node.js (Ejemplo docker)",
+    "type": "module",
+    "main": "server.js",
+
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.19.2"
+    }
+}
