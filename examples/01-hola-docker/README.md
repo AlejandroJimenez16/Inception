@@ -2,7 +2,7 @@
 
 ## 🎯 Objetivo
 
-Ejemplo básico para aprender Docker desde cero en el que construimos una imagen mínima y ejecutamos un contenedor que imprime un mensaje.
+Ejemplo básico para aprender `Docker` desde cero en el que construimos una imagen mínima y ejecutamos un contenedor que imprime un mensaje.
 
 ## 📁 Estructura
 

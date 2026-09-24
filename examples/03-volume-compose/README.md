@@ -2,7 +2,7 @@
 
 ## 🎯 Objetivo
 
-Ejemplo en el que levantamos el mismo servidor web básico en Node.js del ejercicio anterior, pero esta vez levantando el contenedor mediante **docker-compose** y usando **bind mount** para que los cambios en el código se reflejen al instante, sin tener que reconstruir la imagen cada vez.
+Ejemplo en el que levantamos el mismo servidor web básico en Node.js del ejercicio anterior, pero esta vez levantando el contenedor mediante `docker-compose` y usando `bind mount` para que los cambios en el código se reflejen al instante, sin tener que reconstruir la imagen cada vez.
 
 ## 📁 Estructura
 

@@ -2,7 +2,7 @@
 
 ## 🎯 Objetivo
 
-Ejemplo en el que levantamos un servidor web básico en Node.js dentro de un contenedor y accedemos a él desde nuestro navegador.
+Ejemplo en el que levantamos un servidor web básico en `Node.js` dentro de un contenedor y accedemos a él desde nuestro navegador.
 
 ## 📁 Estructura
 
