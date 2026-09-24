@@ -1,0 +1,14 @@
+{
+    "name": "03-volume-compose",
+    "version": "1.0.0",
+    "description": "Server de Node.js con bind mount y docker-compose (Ejemplo docker)",
+    "type": "module",
+    "main": "server.js",
+
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.19.2"
+    }
+}

@@ -1,0 +1,9 @@
+# Definición de los servicios (los contenedores de la aplicación)
+services:
+  server:                                 # Nombre del servicio
+    build: .                              # Ruta donde buscar el Dockerfile ('.' -> ruta actual)
+    ports:                                # Enlace de puertos
+      - "3000:3000"
+    command: node --watch server.js       # Sobrescribir comando por defecto (`CMD`)
+    volumes:                              # Volúmenes que usa (en este caso bind mount)
+      - ./server.js:/app/server.js
