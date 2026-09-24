@@ -1,0 +1,21 @@
+services:
+  # Servicio 1: Base de datos PostgreSQL
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: alejandj
+      POSTGRES_PASSWORD: secreto123
+      POSTGRES_DB: appdb
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+  # Servicio 2: Interfaz web para gestionar la base de datos (Adminer)
+  adminer:
+    image: adminer
+    ports:
+      - "8080:8080"
+    depends_on:          # Espera a que el contenedor 'db' se inicie antes de arrancar Adminer
+      - db
+
+volumes:
+  db-data:
