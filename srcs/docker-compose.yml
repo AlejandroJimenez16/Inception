@@ -3,3 +3,14 @@ services:
     build: ./requirements/mariadb
     image: mariadb
     container_name: mariadb
+    volumes:
+      - mariadb_data:/var/lib/mysql
+
+volumes:
+  mariadb_data:
+    name: mariadb_data
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /home/alejandj/data
