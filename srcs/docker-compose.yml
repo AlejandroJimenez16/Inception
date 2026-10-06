@@ -5,6 +5,14 @@ services:
     container_name: mariadb
     volumes:
       - mariadb_data:/var/lib/mysql
+    env_file:
+      - .env
+    secrets:
+      - db_password
+
+secrets:
+  db_password:
+    file: ../secrets/db_password.txt
 
 volumes:
   mariadb_data:
@@ -13,4 +21,4 @@ volumes:
     driver_opts:
       type: none
       o: bind
-      device: /home/alejandj/data
+      device: /home/alejandj/data/mariadb

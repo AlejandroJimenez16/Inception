@@ -6,7 +6,7 @@
 #    By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/09/30 18:17:08 by alejandj          #+#    #+#              #
-#    Updated: 2026/10/01 20:01:27 by alejandj         ###   ########.fr        #
+#    Updated: 2026/10/03 19:32:11 by alejandj         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ init_dirs:
 	@echo "$(BLUE)====================================================$(RESET)"
 	@echo "$(GREEN)[INFO] Creating data directories...$(RESET)"
 	@echo "$(BLUE)====================================================$(RESET)"
-	@mkdir -p $(DIR_DATA)
+	@mkdir -p $(DIR_DATA)/mariadb
 	@echo "$(YELLOW)[OK] Directories ready!$(RESET)"
 
 up: init_dirs
@@ -66,7 +66,7 @@ fclean: clean
 	@echo "$(BLUE)====================================================$(RESET)"
 	@echo "$(RED)[INFO] Cleaning directories...$(RESET)"
 	@echo "$(BLUE)====================================================$(RESET)"
-	@rm -rf $(DIR_DATA) 2>/dev/null || true
+	@sudo rm -rf $(DIR_DATA)
 	@echo "$(YELLOW)[OK] Directories cleanup complete.$(RESET)"    
 	
 re: fclean up
