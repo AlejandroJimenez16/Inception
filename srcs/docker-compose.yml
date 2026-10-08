@@ -9,10 +9,13 @@ services:
       - .env
     secrets:
       - db_password
+      - db_root_password
 
 secrets:
   db_password:
     file: ../secrets/db_password.txt
+  db_root_password:
+    file: ../secrets/db_root_password.txt
 
 volumes:
   mariadb_data:
